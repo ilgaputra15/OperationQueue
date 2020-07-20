@@ -13,6 +13,10 @@
 		EE4FE68924C5321300015194 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE4FE68724C5321300015194 /* Main.storyboard */; };
 		EE4FE68B24C5321600015194 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE4FE68A24C5321600015194 /* Assets.xcassets */; };
 		EE4FE68E24C5321600015194 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE4FE68C24C5321600015194 /* LaunchScreen.storyboard */; };
+		EE4FE69624C5323200015194 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4FE69524C5323200015194 /* ImageDownloader.swift */; };
+		EE4FE69924C5325900015194 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4FE69824C5325900015194 /* Movie.swift */; };
+		EE4FE69D24C533EF00015194 /* MovieRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4FE69C24C533EF00015194 /* MovieRepository.swift */; };
+		EEE4751B24C5369800617944 /* PendingOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE4751A24C5369800617944 /* PendingOperations.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		EE4FE68A24C5321600015194 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE4FE68D24C5321600015194 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EE4FE68F24C5321600015194 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE4FE69524C5323200015194 /* ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
+		EE4FE69824C5325900015194 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		EE4FE69C24C533EF00015194 /* MovieRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieRepository.swift; sourceTree = "<group>"; };
+		EEE4751A24C5369800617944 /* PendingOperations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PendingOperations.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +64,8 @@
 		EE4FE68024C5321300015194 /* My List Movie */ = {
 			isa = PBXGroup;
 			children = (
+				EE4FE69E24C5342D00015194 /* Core */,
+				EE4FE69A24C533CD00015194 /* Data */,
 				EE4FE68124C5321300015194 /* AppDelegate.swift */,
 				EE4FE68324C5321300015194 /* SceneDelegate.swift */,
 				EE4FE68524C5321300015194 /* ViewController.swift */,
@@ -65,6 +75,48 @@
 				EE4FE68F24C5321600015194 /* Info.plist */,
 			);
 			path = "My List Movie";
+			sourceTree = "<group>";
+		};
+		EE4FE69724C5324E00015194 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EE4FE69824C5325900015194 /* Movie.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EE4FE69A24C533CD00015194 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				EE4FE69B24C533DB00015194 /* Repository */,
+				EE4FE69724C5324E00015194 /* Model */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		EE4FE69B24C533DB00015194 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				EE4FE69C24C533EF00015194 /* MovieRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		EE4FE69E24C5342D00015194 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				EE4FE69F24C5343200015194 /* Utils */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		EE4FE69F24C5343200015194 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				EE4FE69524C5323200015194 /* ImageDownloader.swift */,
+				EEE4751A24C5369800617944 /* PendingOperations.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,7 +192,11 @@
 			files = (
 				EE4FE68624C5321300015194 /* ViewController.swift in Sources */,
 				EE4FE68224C5321300015194 /* AppDelegate.swift in Sources */,
+				EE4FE69D24C533EF00015194 /* MovieRepository.swift in Sources */,
+				EEE4751B24C5369800617944 /* PendingOperations.swift in Sources */,
+				EE4FE69624C5323200015194 /* ImageDownloader.swift in Sources */,
 				EE4FE68424C5321300015194 /* SceneDelegate.swift in Sources */,
+				EE4FE69924C5325900015194 /* Movie.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
